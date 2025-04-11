@@ -9,6 +9,13 @@ def main():
     Code Your Program here
     ########################################
     """
+    while total <= 100:
+        number = random.randint(1, 10)
+        numbers.append(number)
+        total += number
+    
+    sum_numbers_exclude_last = sum(numbers[:-1])
+
 
     print(f'The random values are {numbers}')
     print(f'The total is {total}')
